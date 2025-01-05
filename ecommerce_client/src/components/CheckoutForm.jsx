@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import axios from 'axios';
+import CheckoutForm from './components/CheckoutForm';
+       
+const App = () => (
+    <div>
+        <h1>Checkout</h1>
+        <CheckoutForm />
+    </div>
+);
 
+export default App;
 
 const CheckoutForm = () => {
     const stripe = useStripe();
